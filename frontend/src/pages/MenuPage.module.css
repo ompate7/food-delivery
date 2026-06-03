@@ -1,0 +1,72 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.state {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.hero {
+  padding: 4rem 0 2.5rem;
+}
+
+.heroEyebrow {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.heroTitle {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.heroTitle span {
+  color: var(--accent);
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.filter:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.filterActive {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}

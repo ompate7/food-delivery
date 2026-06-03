@@ -1,0 +1,127 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.imgWrap {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card:hover .img {
+  transform: scale(1.04);
+}
+
+.category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(15, 14, 12, 0.82);
+  backdrop-filter: blur(6px);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.desc {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.price {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.addBtn {
+  background: var(--accent);
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.addBtn:hover {
+  background: var(--accent-hover);
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+}
+
+.qtyBtn {
+  background: none;
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  transition: opacity 0.2s;
+}
+
+.qtyBtn:hover { opacity: 0.7; }
+
+.qtyNum {
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 16px;
+  text-align: center;
+}

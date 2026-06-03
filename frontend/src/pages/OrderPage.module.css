@@ -1,0 +1,159 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.state {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  color: var(--text-muted);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.newOrder {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.newOrder:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.statusCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.statusTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.currentStatus {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.statusPulse {
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.statusSub {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .details { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+
+.cardTitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.orderName { color: var(--text-muted); }
+.qty { color: var(--text-dim); }
+.orderPrice { color: var(--text); font-weight: 600; }
+
+.totalLine {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.total { color: var(--accent); }
+
+.info {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.infoMuted {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.orderId {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.orderId span { font-family: monospace; }
