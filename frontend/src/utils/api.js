@@ -1,4 +1,4 @@
-const BASE = "/api";
+const BASE = "https://food-delivery-three-topaz.vercel.app/api";
 
 export async function fetchMenu() {
   const res = await fetch(`${BASE}/menu`);
